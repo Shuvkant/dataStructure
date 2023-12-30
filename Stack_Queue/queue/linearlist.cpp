@@ -62,6 +62,7 @@ void dequeueShifting(queue *q)
 
     else
     {
+        std::cout << q->data[q->front] << " is dequed";
         for (int i = q->front; i < q->rear; i++)
         {
             q->data[i] = q->data[i + 1];
