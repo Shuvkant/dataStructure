@@ -68,6 +68,7 @@ void dequeueShifting(queue *q)
             q->data[i] = q->data[i + 1];
         }
         (q->rear)--;
+        std::cout << "\nvalue of q.rear=" << q->rear; // for finding the value of q->rear
     }
 }
 
